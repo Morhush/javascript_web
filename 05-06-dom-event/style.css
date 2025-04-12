@@ -16,6 +16,18 @@ header h1 {
     text-transform: uppercase;
 }
 
+main button {
+    background-color: brown;
+}
+.board {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.board img {
+    width: 25%;
+    vertical-align: bottom;
+}
 /* --- modal window ---- */
 .rules {
     position: fixed;
