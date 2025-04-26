@@ -1,0 +1,33 @@
+#shooter-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+#shooter-grid div {
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+}
+
+.bomb {
+    background-image: url(images/bomb.png);
+}
+
+.shooter {
+    background-image: url(images/shooter.png);
+}
+
+.shoot {
+    background-image: url(images/shoot.png);
+}
+
+
+
+
+
+
+
+
+
+
