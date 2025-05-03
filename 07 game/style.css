@@ -22,8 +22,12 @@
     background-image: url(images/shoot.png);
 }
 
-
-
+.gamewin{
+    background-color: blue;
+}
+.gameover{
+    background-color: red;
+}
 
 
 
