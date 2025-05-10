@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(107, 106, 106);
+    border: 2px solid gray;
+}
+canvas{
+    border: 1px solid salmon;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
