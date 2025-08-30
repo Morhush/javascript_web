@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+
+    <script>
+        // the most common variation of a function
+        function great() {
+            console.log("Great!");
+        }  
+        
+        great();
+
+        // function with parameters
+        function greet(name) {
+            console.log("Hello " + name + "!");
+        }
+        greetUser("Alice");
+
+        // default parameters
+        function greet(name = "Guest") {
+            console.log("Hello " + name + "!");
+        }
+        greet("Alice");    // Виведе: Hello Alice!
+
+
+        function  addNumbers(a, b) {
+            return a + b;
+            
+        }
+
+        //function addNumbers(a, b)
+        let sum = addNumbers(5, 10);
+        console.log("Sum: " + sum); // Виведе: Sum: 15
+        
+
+        function getRandomNumber(min = 0, max = 100) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        let a = [1, 2, 3, 4, 5];
+
+        function a1(a, b) {
+            return a + b;
+        }
+
+        function multiplyNumbers(...args) {
+            return args.reduce((acc, curr) => acc * curr, 0);
+            
+        }
+
+        // ділення двох чисел
+        function divideNumbers(a, b) {
+            if (b === 0) {
+                console.log("Error: Division by zero is not allowed.");
+                return null;
+            }
+            return a / b;
+        }
+        // функція яка повертає обєкт
+        function createPerson(name, age) {
+            return { name: name, age: age };
+        }   
+        let person = createPerson("John", 30);
+        
+
+        const square = (x) => x * x;
+        console.log(square(5)); // Виведе: 25
+        
+        const cube = (x) => {
+            return x * x * x;
+        };
+        console.log(cube(3)); // Виведе: 27
+
+        const factorial = function factorial(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            }
+            return n * factorial(n - 1);
+        };
+        console.log(factorial(5)); // Виведе: 120
+    </script> 
+</body>
+</html>

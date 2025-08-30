@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Classes</title>
+</head>
+<body>
+    <h1>JavaScript Classes</h1>
+    <script>
+        // клас - це шаблон для створення об'єктів з певними властивостями та методами
+        class Person {
+            // конструктор - це спеціальний метод, який викликається під час створення нового об'єкта
+            constructor(name, age) {
+                this.name = name; // властивість name
+                this.age = age;   // властивість age
+            }
+
+            // метод класу
+            greet() {
+                console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+            }
+
+            haveBirthday() {
+                this.age += 1;
+                console.log(`Happy birthday ${this.name}! You are now ${this.age} years old.`);
+            }
+        }
+
+        // створення нового об'єкта класу Person
+        const person1 = new Person("Alice", 30);
+        person1.greet(); // Виведе: Hello, my name is Alice and I am 30 years old.
+        person1.haveBirthday(); // Виведе: Happy birthday Alice! You are now 31 years old.
+
+        const person2 = new Person("Bob", 25);
+        person2.greet(); // Виведе: Hello, my name is Bob and I am 25 years old.
+        person2.haveBirthday(); // Виведе: Happy birthday Bob! You are now 26 years old.
+    </script>
+</body>
+</html>
